@@ -1,0 +1,4 @@
+/home/antonio/Documentos/REPOS/chat_multiusuario/build/CMakeFiles/tslog.dir
+/home/antonio/Documentos/REPOS/chat_multiusuario/build/CMakeFiles/tslog_test.dir
+/home/antonio/Documentos/REPOS/chat_multiusuario/build/CMakeFiles/edit_cache.dir
+/home/antonio/Documentos/REPOS/chat_multiusuario/build/CMakeFiles/rebuild_cache.dir

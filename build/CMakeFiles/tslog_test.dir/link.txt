@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/tslog_test.dir/libtslog/tslog_test.cpp.o -o tslog_test  libtslog.a 
