@@ -115,3 +115,77 @@ sequenceDiagram
   * **Código:** Headers principais (`.h`), `libtslog` e `tslog_test.cpp` concluídos.
   * **Build:** `CMakeLists.txt` funcional em Linux.
   * **Teste:** `tslog_test` executado com sucesso, provando a thread-safety do logger.
+
+----
+
+## Build & Execução
+
+O projeto utiliza **CMake** para gerenciar a compilação. As instruções a seguir pressupõem um ambiente Linux/Unix com `cmake` e `make` instalados.
+
+### 1. Compilação do Projeto
+
+Execute os comandos a seguir na raiz do projeto (`chat_multiusuario/`) para compilar todos os alvos (bibliotecas, testes, servidor e cliente).
+
+```bash
+# 1. Cria o diretório de build (necessário para builds out-of-source)
+mkdir build
+cd build
+
+# 2. Gera os Makefiles (a partir do CMakeLists.txt na pasta pai '..')
+cmake ..
+
+# 3. Compila o projeto (cria libtslog.a, chat_server, chat_client e tslog_test)
+make
+````
+
+### 2\. Execução da Etapa 1: Teste de Logging
+
+O executável `tslog_test` valida a funcionalidade *thread-safe* da `libtslog` ao iniciar 5 threads concorrentes para escrever no log.
+
+Execute o teste a partir do diretório `build/`:
+
+```bash
+# Estando em ~/chat_multiusuario/build
+./libtslog/tslog_test
+```
+
+**Saída esperada:** Confirmação no console de que as threads escreveram e a criação (ou atualização) do arquivo `chat_server.log` na pasta `build/`.
+
+### 3\. Execução da Etapa 2: Servidor e Clientes
+
+Esta seção demonstra como iniciar o servidor e como rodar o script de teste de múltiplos clientes.
+
+#### A. Iniciar o Servidor
+
+O servidor requer a porta como argumento (ex: 8080).
+
+```bash
+# Estando em ~/chat_multiusuario/build
+./chat_server 8080
+```
+
+#### B. Iniciar clientes
+
+É possível iniciar clientes manualmente e mandar mensagem entre eles
+
+```bash
+# Estando em ~/chat_multiusuario/build
+./chat_client
+
+# Transmite essa mensagem para todos os clientes iniciados em terminais diferentes 
+Ola
+```
+
+#### C. Simulação de Múltiplos Clientes (Script de Teste)
+
+Para provar o requisito de *broadcast* e *logging* concorrente da Etapa 2, utilize o script de teste:
+
+**Nota:** Este script deve ser executado a partir da **raiz do projeto** (`chat_multiusuario/`). Ele inicia o servidor em segundo plano e injeta mensagens de dois clientes.
+
+```bash
+# Estando em ~/chat_multiusuario/
+chmod +x script_test.sh # Garante permissão
+./script_test.sh
+```
+
+**Verificação:** Após a execução do script, o arquivo `./chat_server.log` deve conter as mensagens de log de conexão, recebimento e broadcast de ambos os clientes, provando a concorrência.

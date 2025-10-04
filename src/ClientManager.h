@@ -20,12 +20,12 @@ struct ClientInfo {
 class ClientManager {
 private:
     // O mapa de clientes é a estrutura crítica, protegida pelo mutex
-    std::map<int, std::shared_ptr<ClientInfo>> clients_;
+    std::map<int, std::shared_ptr<ClientSession>> sessions_; //
     std::mutex list_mutex_;
 
 public:
     // Adiciona um novo cliente à lista
-    void addClient(int socket_fd, const std::string& username);
+    void addClient(std::shared_ptr<ClientSession> session);
 
     // Remove um cliente da lista (após desconexão)
     void removeClient(int socket_fd);
@@ -38,9 +38,11 @@ public:
     
     // (Opcional para a Etapa 3) Retorna o número de clientes ativos
     size_t getActiveCount() {
-        std::lock_guard<std::mutex> lock(list_mutex_);
-        return clients_.size();
-    }
+    std::lock_guard<std::mutex> lock(list_mutex_);
+    
+    // CORREÇÃO: Usar sessions_ em vez de clients_
+    return sessions_.size(); 
+}
 };
 
 #endif // CLIENT_MANAGER_H

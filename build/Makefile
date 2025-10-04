@@ -142,6 +142,45 @@ tslog_test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tslog_test.dir/build.make CMakeFiles/tslog_test.dir/build
 .PHONY : tslog_test/fast
 
+#=============================================================================
+# Target rules for targets named chat_core
+
+# Build rule for target.
+chat_core: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 chat_core
+.PHONY : chat_core
+
+# fast build rule for target.
+chat_core/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_core.dir/build.make CMakeFiles/chat_core.dir/build
+.PHONY : chat_core/fast
+
+#=============================================================================
+# Target rules for targets named chat_server
+
+# Build rule for target.
+chat_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 chat_server
+.PHONY : chat_server
+
+# fast build rule for target.
+chat_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_server.dir/build.make CMakeFiles/chat_server.dir/build
+.PHONY : chat_server/fast
+
+#=============================================================================
+# Target rules for targets named chat_client
+
+# Build rule for target.
+chat_client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 chat_client
+.PHONY : chat_client
+
+# fast build rule for target.
+chat_client/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_client.dir/build.make CMakeFiles/chat_client.dir/build
+.PHONY : chat_client/fast
+
 libtslog/tslog.o: libtslog/tslog.cpp.o
 .PHONY : libtslog/tslog.o
 
@@ -190,6 +229,150 @@ libtslog/tslog_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tslog_test.dir/build.make CMakeFiles/tslog_test.dir/libtslog/tslog_test.cpp.s
 .PHONY : libtslog/tslog_test.cpp.s
 
+src/ChatClient.o: src/ChatClient.cpp.o
+.PHONY : src/ChatClient.o
+
+# target to build an object file
+src/ChatClient.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_core.dir/build.make CMakeFiles/chat_core.dir/src/ChatClient.cpp.o
+.PHONY : src/ChatClient.cpp.o
+
+src/ChatClient.i: src/ChatClient.cpp.i
+.PHONY : src/ChatClient.i
+
+# target to preprocess a source file
+src/ChatClient.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_core.dir/build.make CMakeFiles/chat_core.dir/src/ChatClient.cpp.i
+.PHONY : src/ChatClient.cpp.i
+
+src/ChatClient.s: src/ChatClient.cpp.s
+.PHONY : src/ChatClient.s
+
+# target to generate assembly for a file
+src/ChatClient.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_core.dir/build.make CMakeFiles/chat_core.dir/src/ChatClient.cpp.s
+.PHONY : src/ChatClient.cpp.s
+
+src/ChatServer.o: src/ChatServer.cpp.o
+.PHONY : src/ChatServer.o
+
+# target to build an object file
+src/ChatServer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_core.dir/build.make CMakeFiles/chat_core.dir/src/ChatServer.cpp.o
+.PHONY : src/ChatServer.cpp.o
+
+src/ChatServer.i: src/ChatServer.cpp.i
+.PHONY : src/ChatServer.i
+
+# target to preprocess a source file
+src/ChatServer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_core.dir/build.make CMakeFiles/chat_core.dir/src/ChatServer.cpp.i
+.PHONY : src/ChatServer.cpp.i
+
+src/ChatServer.s: src/ChatServer.cpp.s
+.PHONY : src/ChatServer.s
+
+# target to generate assembly for a file
+src/ChatServer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_core.dir/build.make CMakeFiles/chat_core.dir/src/ChatServer.cpp.s
+.PHONY : src/ChatServer.cpp.s
+
+src/ClientManager.o: src/ClientManager.cpp.o
+.PHONY : src/ClientManager.o
+
+# target to build an object file
+src/ClientManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_core.dir/build.make CMakeFiles/chat_core.dir/src/ClientManager.cpp.o
+.PHONY : src/ClientManager.cpp.o
+
+src/ClientManager.i: src/ClientManager.cpp.i
+.PHONY : src/ClientManager.i
+
+# target to preprocess a source file
+src/ClientManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_core.dir/build.make CMakeFiles/chat_core.dir/src/ClientManager.cpp.i
+.PHONY : src/ClientManager.cpp.i
+
+src/ClientManager.s: src/ClientManager.cpp.s
+.PHONY : src/ClientManager.s
+
+# target to generate assembly for a file
+src/ClientManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_core.dir/build.make CMakeFiles/chat_core.dir/src/ClientManager.cpp.s
+.PHONY : src/ClientManager.cpp.s
+
+src/ClientSession.o: src/ClientSession.cpp.o
+.PHONY : src/ClientSession.o
+
+# target to build an object file
+src/ClientSession.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_core.dir/build.make CMakeFiles/chat_core.dir/src/ClientSession.cpp.o
+.PHONY : src/ClientSession.cpp.o
+
+src/ClientSession.i: src/ClientSession.cpp.i
+.PHONY : src/ClientSession.i
+
+# target to preprocess a source file
+src/ClientSession.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_core.dir/build.make CMakeFiles/chat_core.dir/src/ClientSession.cpp.i
+.PHONY : src/ClientSession.cpp.i
+
+src/ClientSession.s: src/ClientSession.cpp.s
+.PHONY : src/ClientSession.s
+
+# target to generate assembly for a file
+src/ClientSession.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_core.dir/build.make CMakeFiles/chat_core.dir/src/ClientSession.cpp.s
+.PHONY : src/ClientSession.cpp.s
+
+src/main_client.o: src/main_client.cpp.o
+.PHONY : src/main_client.o
+
+# target to build an object file
+src/main_client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_client.dir/build.make CMakeFiles/chat_client.dir/src/main_client.cpp.o
+.PHONY : src/main_client.cpp.o
+
+src/main_client.i: src/main_client.cpp.i
+.PHONY : src/main_client.i
+
+# target to preprocess a source file
+src/main_client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_client.dir/build.make CMakeFiles/chat_client.dir/src/main_client.cpp.i
+.PHONY : src/main_client.cpp.i
+
+src/main_client.s: src/main_client.cpp.s
+.PHONY : src/main_client.s
+
+# target to generate assembly for a file
+src/main_client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_client.dir/build.make CMakeFiles/chat_client.dir/src/main_client.cpp.s
+.PHONY : src/main_client.cpp.s
+
+src/main_server.o: src/main_server.cpp.o
+.PHONY : src/main_server.o
+
+# target to build an object file
+src/main_server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_server.dir/build.make CMakeFiles/chat_server.dir/src/main_server.cpp.o
+.PHONY : src/main_server.cpp.o
+
+src/main_server.i: src/main_server.cpp.i
+.PHONY : src/main_server.i
+
+# target to preprocess a source file
+src/main_server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_server.dir/build.make CMakeFiles/chat_server.dir/src/main_server.cpp.i
+.PHONY : src/main_server.cpp.i
+
+src/main_server.s: src/main_server.cpp.s
+.PHONY : src/main_server.s
+
+# target to generate assembly for a file
+src/main_server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_server.dir/build.make CMakeFiles/chat_server.dir/src/main_server.cpp.s
+.PHONY : src/main_server.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -198,6 +381,9 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... chat_client"
+	@echo "... chat_core"
+	@echo "... chat_server"
 	@echo "... tslog"
 	@echo "... tslog_test"
 	@echo "... libtslog/tslog.o"
@@ -206,6 +392,24 @@ help:
 	@echo "... libtslog/tslog_test.o"
 	@echo "... libtslog/tslog_test.i"
 	@echo "... libtslog/tslog_test.s"
+	@echo "... src/ChatClient.o"
+	@echo "... src/ChatClient.i"
+	@echo "... src/ChatClient.s"
+	@echo "... src/ChatServer.o"
+	@echo "... src/ChatServer.i"
+	@echo "... src/ChatServer.s"
+	@echo "... src/ClientManager.o"
+	@echo "... src/ClientManager.i"
+	@echo "... src/ClientManager.s"
+	@echo "... src/ClientSession.o"
+	@echo "... src/ClientSession.i"
+	@echo "... src/ClientSession.s"
+	@echo "... src/main_client.o"
+	@echo "... src/main_client.i"
+	@echo "... src/main_client.s"
+	@echo "... src/main_server.o"
+	@echo "... src/main_server.i"
+	@echo "... src/main_server.s"
 .PHONY : help
 
 

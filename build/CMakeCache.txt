@@ -198,6 +198,9 @@ LPII_ChatServer_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 LPII_ChatServer_SOURCE_DIR:STATIC=/home/antonio/Documentos/REPOS/chat_multiusuario
 
+//Dependencies for the target
+chat_core_LIB_DEPENDS:STATIC=general;tslog;
+
 
 ########################
 # INTERNAL cache entries
