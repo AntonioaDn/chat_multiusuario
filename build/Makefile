@@ -325,6 +325,30 @@ src/ClientSession.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_core.dir/build.make CMakeFiles/chat_core.dir/src/ClientSession.cpp.s
 .PHONY : src/ClientSession.cpp.s
 
+src/MessageHistory.o: src/MessageHistory.cpp.o
+.PHONY : src/MessageHistory.o
+
+# target to build an object file
+src/MessageHistory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_core.dir/build.make CMakeFiles/chat_core.dir/src/MessageHistory.cpp.o
+.PHONY : src/MessageHistory.cpp.o
+
+src/MessageHistory.i: src/MessageHistory.cpp.i
+.PHONY : src/MessageHistory.i
+
+# target to preprocess a source file
+src/MessageHistory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_core.dir/build.make CMakeFiles/chat_core.dir/src/MessageHistory.cpp.i
+.PHONY : src/MessageHistory.cpp.i
+
+src/MessageHistory.s: src/MessageHistory.cpp.s
+.PHONY : src/MessageHistory.s
+
+# target to generate assembly for a file
+src/MessageHistory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_core.dir/build.make CMakeFiles/chat_core.dir/src/MessageHistory.cpp.s
+.PHONY : src/MessageHistory.cpp.s
+
 src/main_client.o: src/main_client.cpp.o
 .PHONY : src/main_client.o
 
@@ -404,6 +428,9 @@ help:
 	@echo "... src/ClientSession.o"
 	@echo "... src/ClientSession.i"
 	@echo "... src/ClientSession.s"
+	@echo "... src/MessageHistory.o"
+	@echo "... src/MessageHistory.i"
+	@echo "... src/MessageHistory.s"
 	@echo "... src/main_client.o"
 	@echo "... src/main_client.i"
 	@echo "... src/main_client.s"

@@ -7,6 +7,7 @@
 #include "../libtslog/tslog.h" 
 
 class ClientManager; // Forward declaration
+class MessageHistory;
 
 class ClientSession : public std::enable_shared_from_this<ClientSession> {
 private:
@@ -15,12 +16,13 @@ private:
     std::thread worker_thread_; 
     
     std::shared_ptr<ClientManager> manager_; 
+    std::shared_ptr<MessageHistory> history_; 
 
     void run(); 
 
 public:
     // <--- CORREÇÃO 3: DECLARAÇÃO DO CONSTRUTOR
-    ClientSession(int socket_fd, std::shared_ptr<ClientManager> manager);
+    ClientSession(int socket_fd, std::shared_ptr<ClientManager> manager, std::shared_ptr<MessageHistory> history);
 
     void start();
     bool sendMessage(const std::string& message);

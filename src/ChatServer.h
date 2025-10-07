@@ -9,6 +9,8 @@
 
 #include "ClientManager.h"
 #include "ClientSession.h"
+#include "ClientManager.h"
+#include "MessageHistory.h"
 // ... (outros headers de arquitetura)
 
 class ChatServer {
@@ -17,6 +19,7 @@ private:
     int port_;
     
     std::shared_ptr<ClientManager> client_manager_;
+    std::shared_ptr<MessageHistory> message_history_;
     
     std::thread acceptor_thread_; // <--- CORREÇÃO 2: std::thread agora funciona
 

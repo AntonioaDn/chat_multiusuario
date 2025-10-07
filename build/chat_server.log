@@ -1,0 +1,147 @@
+[Mon Oct  6 21:46:54 2025] [INFO] Servidor inicializado na porta 8080.
+[Mon Oct  6 21:46:54 2025] [INFO] Servidor TCP escutando em 0.0.0.0:8080
+[Mon Oct  6 21:47:04 2025] [INFO] Servidor inicializado na porta 8080.
+[Mon Oct  6 21:47:04 2025] [INFO] Servidor TCP escutando em 0.0.0.0:8080
+[Mon Oct  6 21:47:13 2025] [INFO] Cliente CLI inicializado.
+[Mon Oct  6 21:47:13 2025] [INFO] Conectado com sucesso ao servidor 127.0.0.1:8080
+[Mon Oct  6 21:47:13 2025] [INFO] Nova conexão aceita de: 127.0.0.1 no socket: 5
+[Mon Oct  6 21:47:13 2025] [DEBUG] Sessão criada para o socket 5
+[Mon Oct  6 21:47:13 2025] [INFO] Thread de recebimento iniciada.
+[Mon Oct  6 21:47:13 2025] [INFO] Cliente  (socket: 5) adicionado. Total: 1
+[Mon Oct  6 21:47:13 2025] [INFO] Thread de sessão  iniciada.
+[Mon Oct  6 21:47:36 2025] [INFO] Cliente CLI inicializado.
+[Mon Oct  6 21:47:36 2025] [INFO] Conectado com sucesso ao servidor 127.0.0.1:8080
+[Mon Oct  6 21:47:36 2025] [INFO] Nova conexão aceita de: 127.0.0.1 no socket: 6
+[Mon Oct  6 21:47:36 2025] [DEBUG] Sessão criada para o socket 6
+[Mon Oct  6 21:47:36 2025] [INFO] Cliente  (socket: 6) adicionado. Total: 2
+[Mon Oct  6 21:47:36 2025] [INFO] Thread de recebimento iniciada.
+[Mon Oct  6 21:47:36 2025] [INFO] Thread de sessão  iniciada.
+[Mon Oct  6 21:47:45 2025] [INFO] Cliente CLI inicializado.
+[Mon Oct  6 21:47:45 2025] [INFO] Conectado com sucesso ao servidor 127.0.0.1:8080
+[Mon Oct  6 21:47:45 2025] [INFO] Nova conexão aceita de: 127.0.0.1 no socket: 7
+[Mon Oct  6 21:47:45 2025] [DEBUG] Sessão criada para o socket 7
+[Mon Oct  6 21:47:45 2025] [INFO] Thread de recebimento iniciada.
+[Mon Oct  6 21:47:45 2025] [INFO] Cliente  (socket: 7) adicionado. Total: 3
+[Mon Oct  6 21:47:45 2025] [INFO] Thread de sessão  iniciada.
+[Mon Oct  6 21:47:50 2025] [DEBUG] Mensagem recebida de : Opa galera
+[Mon Oct  6 21:47:50 2025] [DEBUG] Mensagem enviada: Opa galera
+[Mon Oct  6 21:48:21 2025] [DEBUG] Mensagem enviada: quit
+[Mon Oct  6 21:48:21 2025] [DEBUG] Mensagem recebida de : quit
+[Mon Oct  6 21:48:24 2025] [DEBUG] Mensagem enviada: quit
+[Mon Oct  6 21:48:24 2025] [DEBUG] Mensagem recebida de : quit
+[Mon Oct  6 21:48:28 2025] [INFO]  (socket 5) desconectou.
+[Mon Oct  6 21:48:28 2025] [INFO] Cliente (socket: 5) removido. Total: 2
+[Mon Oct  6 21:48:28 2025] [DEBUG] ClientSession destruída para o socket 5
+[Mon Oct  6 21:48:28 2025] [INFO] Thread de sessão  finalizada.
+[Mon Oct  6 21:48:32 2025] [INFO] Cliente CLI inicializado.
+[Mon Oct  6 21:48:32 2025] [INFO] Conectado com sucesso ao servidor 127.0.0.1:8080
+[Mon Oct  6 21:48:32 2025] [INFO] Nova conexão aceita de: 127.0.0.1 no socket: 8
+[Mon Oct  6 21:48:32 2025] [DEBUG] Sessão criada para o socket 8
+[Mon Oct  6 21:48:32 2025] [INFO] Cliente  (socket: 8) adicionado. Total: 3
+[Mon Oct  6 21:48:32 2025] [INFO] Thread de recebimento iniciada.
+[Mon Oct  6 21:48:32 2025] [INFO] Thread de sessão  iniciada.
+[Mon Oct  6 21:48:36 2025] [INFO] Conexão fechada.
+[Mon Oct  6 21:48:42 2025] [INFO]  (socket 8) desconectou.
+[Mon Oct  6 21:48:42 2025] [INFO] Cliente (socket: 8) removido. Total: 2
+[Mon Oct  6 21:48:42 2025] [DEBUG] ClientSession destruída para o socket 8
+[Mon Oct  6 21:48:42 2025] [INFO] Thread de sessão  finalizada.
+[Mon Oct  6 21:49:35 2025] [INFO] Nova conexão aceita de: 127.0.0.1 no socket: 5
+[Mon Oct  6 21:49:35 2025] [DEBUG] Sessão criada para o socket 5
+[Mon Oct  6 21:49:35 2025] [INFO] Cliente  (socket: 5) adicionado. Total: 3
+[Mon Oct  6 21:49:35 2025] [INFO] Nova conexão aceita de: 127.0.0.1 no socket: 8
+[Mon Oct  6 21:49:35 2025] [DEBUG] Sessão criada para o socket 8
+[Mon Oct  6 21:49:35 2025] [INFO] Thread de sessão  iniciada.
+[Mon Oct  6 21:49:35 2025] [DEBUG] Mensagem recebida de : Cliente2
+Mensagem 1 do Cliente 2
+[Mon Oct  6 21:49:35 2025] [INFO] Thread de sessão  iniciada.
+[Mon Oct  6 21:49:35 2025] [DEBUG] Mensagem recebida de : Cliente1
+Mensagem 1 do Cliente 1
+Mensagem 2 do Cliente 1
+Mensagem 3 do Cliente 1
+Mensagem 4 do Cliente 1
+Mensagem 5 do Cliente 1
+Mensagem 6 do Cliente 1
+Mensagem 7 do Cliente 1
+Mensagem 8 do Cliente 1
+Mensagem 9 do Cliente 1
+Mensagem 10 do Cliente 1
+[Mon Oct  6 21:49:35 2025] [INFO] Cliente  (socket: 8) adicionado. Total: 4
+[Mon Oct  6 21:49:35 2025] [INFO] Nova conexão aceita de: 127.0.0.1 no socket: 9
+[Mon Oct  6 21:49:35 2025] [DEBUG] Sessão criada para o socket 9
+[Mon Oct  6 21:49:35 2025] [INFO] Cliente  (socket: 9) adicionado. Total: 5
+[Mon Oct  6 21:49:35 2025] [DEBUG] Mensagem recebida de : Mensagem 2 do Cliente 2
+Mensagem 3 do Cliente 2
+Mensagem 4 do Cliente 2
+Mensagem 5 do Cliente 2
+Mensagem 6 do Cliente 2
+Mensagem 7 do Cliente 2
+Mensagem 8 do Cliente 2
+Mensagem 9 do Cliente 2
+Mensagem 10 do Cliente 2
+[Mon Oct  6 21:49:35 2025] [INFO] Nova conexão aceita de: 127.0.0.1 no socket: 10
+[Mon Oct  6 21:49:35 2025] [DEBUG] Sessão criada para o socket 10
+[Mon Oct  6 21:49:35 2025] [INFO]  (socket 5) desconectou.
+[Mon Oct  6 21:49:35 2025] [INFO] Cliente (socket: 5) removido. Total: 4
+[Mon Oct  6 21:49:35 2025] [DEBUG] ClientSession destruída para o socket 5
+[Mon Oct  6 21:49:35 2025] [INFO] Thread de sessão  finalizada.
+[Mon Oct  6 21:49:35 2025] [INFO] Cliente  (socket: 10) adicionado. Total: 5
+[Mon Oct  6 21:49:35 2025] [INFO] Nova conexão aceita de: 127.0.0.1 no socket: 5
+[Mon Oct  6 21:49:35 2025] [DEBUG] Sessão criada para o socket 5
+[Mon Oct  6 21:49:35 2025] [INFO] Cliente  (socket: 5) adicionado. Total: 6
+[Mon Oct  6 21:49:35 2025] [INFO] Thread de sessão  iniciada.
+[Mon Oct  6 21:49:35 2025] [DEBUG] Mensagem recebida de : Cliente4
+Mensagem 1 do Cliente 4
+Mensagem 2 do Cliente 4
+Mensagem 3 do Cliente 4
+Mensagem 4 do Cliente 4
+Mensagem 5 do Cliente 4
+Mensagem 6 do Cliente 4
+Mensagem 7 do Cliente 4
+Mensagem 8 do Cliente 4
+Mensagem 9 do Cliente 4
+Mensagem 10 do Cliente 4
+[Mon Oct  6 21:49:35 2025] [INFO]  (socket 8) desconectou.
+[Mon Oct  6 21:49:35 2025] [INFO] Cliente (socket: 8) removido. Total: 5
+[Mon Oct  6 21:49:35 2025] [WARN] Erro ao enviar para socket 8: Broken pipe
+[Mon Oct  6 21:49:35 2025] [WARN] Erro ao enviar para socket 9: Broken pipe
+[Mon Oct  6 21:49:35 2025] [INFO] Removendo cliente desconectado (socket 8)
+[Mon Oct  6 21:49:35 2025] [INFO] Removendo cliente desconectado (socket 9)
+[Mon Oct  6 21:49:35 2025] [DEBUG] ClientSession destruída para o socket 8
+[Mon Oct  6 21:49:35 2025] [DEBUG] ClientSession destruída para o socket 9
+[Mon Oct  6 21:49:35 2025] [INFO] Thread de sessão  iniciada.
+[Mon Oct  6 21:49:35 2025] [DEBUG] Mensagem recebida de : Cliente5
+Mensagem 1 do Cliente 5
+Mensagem 2 do Cliente 5
+Mensagem 3 do Cliente 5
+Mensagem 4 do Cliente 5
+Mensagem 5 do Cliente 5
+Mensagem 6 do Cliente 5
+Mensagem 7 do Cliente 5
+Mensagem 8 do Cliente 5
+Mensagem 9 do Cliente 5
+Mensagem 10 do Cliente 5
+[Mon Oct  6 21:49:35 2025] [INFO]  (socket 5) desconectou.
+[Mon Oct  6 21:49:35 2025] [INFO] Cliente (socket: 5) removido. Total: 3
+[Mon Oct  6 21:49:35 2025] [DEBUG] ClientSession destruída para o socket 5
+[Mon Oct  6 21:49:35 2025] [INFO] Thread de sessão  finalizada.
+[Mon Oct  6 21:49:35 2025] [INFO] Thread de sessão  iniciada.
+[Mon Oct  6 21:49:35 2025] [DEBUG] Mensagem recebida de : Cliente3
+Mensagem 1 do Cliente 3
+Mensagem 2 do Cliente 3
+Mensagem 3 do Cliente 3
+Mensagem 4 do Cliente 3
+Mensagem 5 do Cliente 3
+Mensagem 6 do Cliente 3
+Mensagem 7 do Cliente 3
+Mensagem 8 do Cliente 3
+Mensagem 9 do Cliente 3
+Mensagem 10 do Cliente 3
+[Mon Oct  6 21:49:35 2025] [INFO]  (socket 10) desconectou.
+[Mon Oct  6 21:49:35 2025] [INFO] Cliente (socket: 10) removido. Total: 2
+[Mon Oct  6 21:49:35 2025] [INFO] Thread de sessão  finalizada.
+[Mon Oct  6 21:49:35 2025] [INFO] Thread de sessão  finalizada.
+[Mon Oct  6 21:49:35 2025] [DEBUG] ClientSession destruída para o socket 10
+[Mon Oct  6 21:49:35 2025] [INFO]  (socket 9) desconectou.
+[Mon Oct  6 21:49:35 2025] [INFO] Thread de sessão  finalizada.
+[Mon Oct  6 21:51:21 2025] [WARN] Conexão perdida com o servidor.
+[Mon Oct  6 21:51:21 2025] [WARN] Conexão perdida com o servidor.

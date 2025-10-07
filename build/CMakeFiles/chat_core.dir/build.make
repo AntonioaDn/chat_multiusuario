@@ -125,12 +125,27 @@ CMakeFiles/chat_core.dir/src/ChatClient.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/chat_core.dir/src/ChatClient.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/antonio/Documentos/REPOS/chat_multiusuario/src/ChatClient.cpp -o CMakeFiles/chat_core.dir/src/ChatClient.cpp.s
 
+CMakeFiles/chat_core.dir/src/MessageHistory.cpp.o: CMakeFiles/chat_core.dir/flags.make
+CMakeFiles/chat_core.dir/src/MessageHistory.cpp.o: /home/antonio/Documentos/REPOS/chat_multiusuario/src/MessageHistory.cpp
+CMakeFiles/chat_core.dir/src/MessageHistory.cpp.o: CMakeFiles/chat_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/antonio/Documentos/REPOS/chat_multiusuario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/chat_core.dir/src/MessageHistory.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/chat_core.dir/src/MessageHistory.cpp.o -MF CMakeFiles/chat_core.dir/src/MessageHistory.cpp.o.d -o CMakeFiles/chat_core.dir/src/MessageHistory.cpp.o -c /home/antonio/Documentos/REPOS/chat_multiusuario/src/MessageHistory.cpp
+
+CMakeFiles/chat_core.dir/src/MessageHistory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/chat_core.dir/src/MessageHistory.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/antonio/Documentos/REPOS/chat_multiusuario/src/MessageHistory.cpp > CMakeFiles/chat_core.dir/src/MessageHistory.cpp.i
+
+CMakeFiles/chat_core.dir/src/MessageHistory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/chat_core.dir/src/MessageHistory.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/antonio/Documentos/REPOS/chat_multiusuario/src/MessageHistory.cpp -o CMakeFiles/chat_core.dir/src/MessageHistory.cpp.s
+
 # Object files for target chat_core
 chat_core_OBJECTS = \
 "CMakeFiles/chat_core.dir/src/ChatServer.cpp.o" \
 "CMakeFiles/chat_core.dir/src/ClientManager.cpp.o" \
 "CMakeFiles/chat_core.dir/src/ClientSession.cpp.o" \
-"CMakeFiles/chat_core.dir/src/ChatClient.cpp.o"
+"CMakeFiles/chat_core.dir/src/ChatClient.cpp.o" \
+"CMakeFiles/chat_core.dir/src/MessageHistory.cpp.o"
 
 # External object files for target chat_core
 chat_core_EXTERNAL_OBJECTS =
@@ -139,9 +154,10 @@ libchat_core.a: CMakeFiles/chat_core.dir/src/ChatServer.cpp.o
 libchat_core.a: CMakeFiles/chat_core.dir/src/ClientManager.cpp.o
 libchat_core.a: CMakeFiles/chat_core.dir/src/ClientSession.cpp.o
 libchat_core.a: CMakeFiles/chat_core.dir/src/ChatClient.cpp.o
+libchat_core.a: CMakeFiles/chat_core.dir/src/MessageHistory.cpp.o
 libchat_core.a: CMakeFiles/chat_core.dir/build.make
 libchat_core.a: CMakeFiles/chat_core.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/antonio/Documentos/REPOS/chat_multiusuario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libchat_core.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/antonio/Documentos/REPOS/chat_multiusuario/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libchat_core.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/chat_core.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/chat_core.dir/link.txt --verbose=$(VERBOSE)
 

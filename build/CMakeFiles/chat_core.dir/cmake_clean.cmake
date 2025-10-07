@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/chat_core.dir/src/ClientManager.cpp.o.d"
   "CMakeFiles/chat_core.dir/src/ClientSession.cpp.o"
   "CMakeFiles/chat_core.dir/src/ClientSession.cpp.o.d"
+  "CMakeFiles/chat_core.dir/src/MessageHistory.cpp.o"
+  "CMakeFiles/chat_core.dir/src/MessageHistory.cpp.o.d"
   "libchat_core.a"
   "libchat_core.pdb"
 )

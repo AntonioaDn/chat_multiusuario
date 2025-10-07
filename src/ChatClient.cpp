@@ -93,13 +93,18 @@ void ChatClient::receiverLoop() {
 
 void ChatClient::disconnect() {
     if (connected_) {
+        // Indica que não vamos enviar mais dados (fecha escrita), mas mantém a leitura
         connected_ = false;
         if (client_socket_fd_ >= 0) {
-            close(client_socket_fd_);
+            // Fecha metade da conexão para sinalizar ao servidor que não vamos enviar mais
+            ::shutdown(client_socket_fd_, SHUT_WR);
+            // Dá um pequeno tempo para que a thread de recepção leia mensagens pendentes
+            std::this_thread::sleep_for(std::chrono::milliseconds(200));
+            ::close(client_socket_fd_);
             client_socket_fd_ = -1;
             TSLOG(INFO, "Conexão fechada.");
         }
-        
+
         // Tenta juntar a thread de recebimento (se estiver rodando)
         if (receiver_thread_.joinable()) {
             receiver_thread_.join(); 

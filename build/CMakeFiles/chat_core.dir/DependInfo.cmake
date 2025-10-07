@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/antonio/Documentos/REPOS/chat_multiusuario/src/ChatServer.cpp" "CMakeFiles/chat_core.dir/src/ChatServer.cpp.o" "gcc" "CMakeFiles/chat_core.dir/src/ChatServer.cpp.o.d"
   "/home/antonio/Documentos/REPOS/chat_multiusuario/src/ClientManager.cpp" "CMakeFiles/chat_core.dir/src/ClientManager.cpp.o" "gcc" "CMakeFiles/chat_core.dir/src/ClientManager.cpp.o.d"
   "/home/antonio/Documentos/REPOS/chat_multiusuario/src/ClientSession.cpp" "CMakeFiles/chat_core.dir/src/ClientSession.cpp.o" "gcc" "CMakeFiles/chat_core.dir/src/ClientSession.cpp.o.d"
+  "/home/antonio/Documentos/REPOS/chat_multiusuario/src/MessageHistory.cpp" "CMakeFiles/chat_core.dir/src/MessageHistory.cpp.o" "gcc" "CMakeFiles/chat_core.dir/src/MessageHistory.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

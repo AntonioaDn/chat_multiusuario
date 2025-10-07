@@ -19,10 +19,15 @@
 #define BUFFER_SIZE 1024
 
 // Construtor
-ClientSession::ClientSession(int socket_fd, std::shared_ptr<ClientManager> manager)
-    : client_socket_fd_(socket_fd), manager_(manager), username_("Client_#" + std::to_string(socket_fd)) 
+ClientSession::ClientSession(int socket_fd, 
+                             std::shared_ptr<ClientManager> manager,
+                             std::shared_ptr<MessageHistory> history) 
+    : client_socket_fd_(socket_fd), 
+      manager_(manager),
+      history_(history) 
 {
     TSLOG(DEBUG, "Sessão criada para o socket " + std::to_string(client_socket_fd_));
+    // Coloque aqui o restante do corpo do construtor
 }
 
 // Inicia a thread de trabalho, executando o método run().
@@ -75,10 +80,14 @@ bool ClientSession::sendMessage(const std::string &msg) {
     const char *buf = msg.data();
     size_t total = msg.size();
     size_t sent = 0;
+    // Usar MSG_NOSIGNAL quando disponível evita gerar SIGPIPE.
+    int flags = 0;
+#ifdef MSG_NOSIGNAL
+    flags |= MSG_NOSIGNAL;
+#endif
 
-    // Usar MSG_NOSIGNAL evita SIGPIPE em algumas plataformas.
     while (sent < total) {
-        ssize_t n = ::send(client_socket_fd_, buf + sent, total - sent, MSG_NOSIGNAL);
+        ssize_t n = ::send(client_socket_fd_, buf + sent, total - sent, flags);
         if (n > 0) {
             sent += static_cast<size_t>(n);
             continue;
@@ -95,6 +104,13 @@ bool ClientSession::sendMessage(const std::string &msg) {
             std::this_thread::sleep_for(std::chrono::milliseconds(10));
             continue;
         }
+        // Erros como EPIPE e ECONNRESET indicam que o cliente desconectou
+        if (errno == EPIPE || errno == ECONNRESET) {
+            TSLOG(INFO, "Cliente desconectado (send failed) no socket " + std::to_string(client_socket_fd_) + ": " + std::strerror(errno));
+            return false;
+        }
+
+        // Outros erros são inesperados e merecem aviso
         TSLOG(WARNING, "Erro ao enviar para socket " + std::to_string(client_socket_fd_) + ": " + std::strerror(errno));
         return false;
     }

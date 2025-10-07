@@ -1,17 +1,23 @@
 #include "ChatServer.h"
 #include "ClientSession.h"
+#include "MessageHistory.h"
 #include <unistd.h>      // close()
 #include <sys/socket.h>  // socket, bind, listen, accept
 #include <netinet/in.h>  // sockaddr_in
 #include <arpa/inet.h>   // inet_ntoa
 #include <cstring>       // memset
 #include <stdexcept>
+#include <signal.h>
 
 // Inicializa o ClientManager e a porta
+// Em chat_multiusuario/src/ClientSession.cpp (Linha 22, onde o erro ocorre)
 ChatServer::ChatServer(int port) : port_(port) {
-    // Inicializa o ClientManager, que é a estrutura compartilhada (Monitor)
+    // Inicializa o ClientManager e o novo Monitor MessageHistory
     client_manager_ = std::make_shared<ClientManager>();
+    message_history_ = std::make_shared<MessageHistory>();
     TSLOG(INFO, "Servidor inicializado na porta " + std::to_string(port) + ".");
+    // Ignorar SIGPIPE globalmente: evita que writes para sockets fechados derrubem o processo
+    signal(SIGPIPE, SIG_IGN);
 }
 
 // Inicia a thread principal de aceitação
@@ -82,8 +88,12 @@ void ChatServer::startAcceptLoop() {
 
         // 6. Cria e Inicia a Thread de Sessão (requisito: Cada cliente atendido por thread)
         try {
-            // Cria a ClientSession na heap e compartilha com shared_ptr
-            auto session = std::make_shared<ClientSession>(client_socket, client_manager_);
+            auto session = std::make_shared<ClientSession>(
+                client_socket, 
+                client_manager_,
+                message_history_
+            );
+            
             session->start();
             // A ClientManager gerencia a lista de sessões/sockets (protegida por mutex)
             client_manager_->addClient(session); 
@@ -101,6 +111,6 @@ ChatServer::~ChatServer() {
     if (acceptor_thread_.joinable()) {
         // Nota: Em produção, você faria um 'detach' ou usaria um flag para encerrar o loop.
         // Aqui, forçaremos o join para a demo da Etapa 2.
-        // acceptor_thread_.join(); 
+        acceptor_thread_.join(); 
     }
 }

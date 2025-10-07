@@ -191,4 +191,6 @@ CMakeFiles/chat_server.dir/src/main_server.cpp.o: \
  /usr/include/c++/13/bits/stl_map.h \
  /usr/include/c++/13/bits/stl_multimap.h \
  /usr/include/c++/13/bits/erase_if.h \
- /home/antonio/Documentos/REPOS/chat_multiusuario/src/ClientSession.h
+ /home/antonio/Documentos/REPOS/chat_multiusuario/src/ClientSession.h \
+ /home/antonio/Documentos/REPOS/chat_multiusuario/src/MessageHistory.h \
+ /usr/include/c++/13/sstream /usr/include/c++/13/bits/sstream.tcc

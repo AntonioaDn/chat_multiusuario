@@ -24,6 +24,7 @@ add_library(chat_core STATIC
     src/ClientManager.cpp
     src/ClientSession.cpp
     src/ChatClient.cpp 
+    src/MessageHistory.cpp
 )
 # Inclui o diretório 'src' para que os headers se encontrem
 target_include_directories(chat_core PUBLIC src)

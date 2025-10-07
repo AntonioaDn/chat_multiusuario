@@ -6,6 +6,7 @@ CMakeFiles/chat_server.dir/src/main_server.cpp.o: /home/antonio/Documentos/REPOS
   /home/antonio/Documentos/REPOS/chat_multiusuario/src/ChatServer.h \
   /home/antonio/Documentos/REPOS/chat_multiusuario/src/ClientManager.h \
   /home/antonio/Documentos/REPOS/chat_multiusuario/src/ClientSession.h \
+  /home/antonio/Documentos/REPOS/chat_multiusuario/src/MessageHistory.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -64,6 +65,7 @@ CMakeFiles/chat_server.dir/src/main_server.cpp.o: /home/antonio/Documentos/REPOS
   /usr/include/c++/13/bits/shared_ptr.h \
   /usr/include/c++/13/bits/shared_ptr_atomic.h \
   /usr/include/c++/13/bits/shared_ptr_base.h \
+  /usr/include/c++/13/bits/sstream.tcc \
   /usr/include/c++/13/bits/std_abs.h \
   /usr/include/c++/13/bits/std_mutex.h \
   /usr/include/c++/13/bits/std_thread.h \
@@ -130,6 +132,7 @@ CMakeFiles/chat_server.dir/src/main_server.cpp.o: /home/antonio/Documentos/REPOS
   /usr/include/c++/13/pstl/glue_memory_defs.h \
   /usr/include/c++/13/pstl/pstl_config.h \
   /usr/include/c++/13/ratio \
+  /usr/include/c++/13/sstream \
   /usr/include/c++/13/stdexcept \
   /usr/include/c++/13/streambuf \
   /usr/include/c++/13/string \
@@ -378,11 +381,15 @@ CMakeFiles/chat_server.dir/src/main_server.cpp.o: /home/antonio/Documentos/REPOS
 
 /usr/include/c++/13/stdexcept:
 
+/usr/include/c++/13/sstream:
+
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
 /usr/include/c++/13/pstl/pstl_config.h:
 
-/usr/include/c++/13/bits/fstream.tcc:
+/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+
+/usr/include/c++/13/pstl/glue_memory_defs.h:
 
 /usr/include/c++/13/bits/node_handle.h:
 
@@ -416,6 +423,12 @@ CMakeFiles/chat_server.dir/src/main_server.cpp.o: /home/antonio/Documentos/REPOS
 
 /usr/include/c++/13/bits/nested_exception.h:
 
+/usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h:
+
+/usr/include/c++/13/pstl/execution_defs.h:
+
+/usr/include/c++/13/bits/basic_ios.tcc:
+
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
@@ -428,21 +441,11 @@ CMakeFiles/chat_server.dir/src/main_server.cpp.o: /home/antonio/Documentos/REPOS
 
 /usr/include/c++/13/bits/cxxabi_init_exception.h:
 
-/home/antonio/Documentos/REPOS/chat_multiusuario/src/ClientManager.h:
+/usr/include/c++/13/bits/exception_defines.h:
 
-/usr/include/c++/13/new:
-
-/usr/include/c++/13/ext/alloc_traits.h:
+/usr/include/c++/13/bits/localefwd.h:
 
 /home/antonio/Documentos/REPOS/chat_multiusuario/src/ChatServer.h:
-
-/usr/include/c++/13/bits/alloc_traits.h:
-
-/usr/include/c++/13/bits/concept_check.h:
-
-/usr/include/c++/13/ratio:
-
-/usr/include/c++/13/cwctype:
 
 /usr/include/c++/13/bits/predefined_ops.h:
 
@@ -450,13 +453,33 @@ CMakeFiles/chat_server.dir/src/main_server.cpp.o: /home/antonio/Documentos/REPOS
 
 /usr/include/c++/13/cwchar:
 
+/usr/include/c++/13/bits/move.h:
+
+/usr/include/x86_64-linux-gnu/bits/types.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
+
+/usr/include/c++/13/bits/cpp_type_traits.h:
+
 /home/antonio/Documentos/REPOS/chat_multiusuario/src/ClientSession.h:
+
+/home/antonio/Documentos/REPOS/chat_multiusuario/src/MessageHistory.h:
 
 /usr/include/c++/13/bits/unique_lock.h:
 
 /usr/include/c++/13/mutex:
 
 /usr/include/c++/13/bits/ostream_insert.h:
+
+/home/antonio/Documentos/REPOS/chat_multiusuario/src/ClientManager.h:
+
+/usr/include/c++/13/bits/concept_check.h:
+
+/usr/include/c++/13/bits/alloc_traits.h:
+
+/usr/include/c++/13/new:
+
+/usr/include/c++/13/ext/alloc_traits.h:
 
 /home/antonio/Documentos/REPOS/chat_multiusuario/libtslog/tslog.h:
 
@@ -475,10 +498,6 @@ CMakeFiles/chat_server.dir/src/main_server.cpp.o: /home/antonio/Documentos/REPOS
 /usr/include/c++/13/bits/range_access.h:
 
 /usr/include/c++/13/debug/debug.h:
-
-/usr/include/c++/13/bits/localefwd.h:
-
-/usr/include/c++/13/bits/exception_defines.h:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
@@ -532,15 +551,9 @@ CMakeFiles/chat_server.dir/src/main_server.cpp.o: /home/antonio/Documentos/REPOS
 
 /usr/include/c++/13/bits/ptr_traits.h:
 
+/usr/include/c++/13/bits/fstream.tcc:
+
 /usr/include/c++/13/bits/chrono.h:
-
-/usr/include/c++/13/bits/move.h:
-
-/usr/include/x86_64-linux-gnu/bits/types.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
-
-/usr/include/c++/13/bits/cpp_type_traits.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
@@ -569,6 +582,12 @@ CMakeFiles/chat_server.dir/src/main_server.cpp.o: /home/antonio/Documentos/REPOS
 /usr/include/c++/13/bits/erase_if.h:
 
 /usr/include/c++/13/bits/shared_ptr_atomic.h:
+
+/usr/include/c++/13/ratio:
+
+/usr/include/c++/13/cwctype:
+
+/usr/include/c++/13/bits/sstream.tcc:
 
 /usr/include/c++/13/bits/std_thread.h:
 
@@ -648,6 +667,10 @@ CMakeFiles/chat_server.dir/src/main_server.cpp.o: /home/antonio/Documentos/REPOS
 
 /usr/include/c++/13/bits/vector.tcc:
 
+/usr/include/c++/13/cstdlib:
+
+/usr/include/c++/13/cstdint:
+
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-least.h:
@@ -669,10 +692,6 @@ CMakeFiles/chat_server.dir/src/main_server.cpp.o: /home/antonio/Documentos/REPOS
 /usr/include/c++/13/bits/charconv.h:
 
 /usr/include/c++/13/cstdio:
-
-/usr/include/c++/13/cstdint:
-
-/usr/include/c++/13/cstdlib:
 
 /usr/include/c++/13/ctime:
 
@@ -698,10 +717,6 @@ CMakeFiles/chat_server.dir/src/main_server.cpp.o: /home/antonio/Documentos/REPOS
 
 /usr/include/c++/13/istream:
 
-/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
-
-/usr/include/c++/13/pstl/glue_memory_defs.h:
-
 /usr/include/c++/13/limits:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
@@ -713,9 +728,3 @@ CMakeFiles/chat_server.dir/src/main_server.cpp.o: /home/antonio/Documentos/REPOS
 /usr/include/c++/13/bits/streambuf_iterator.h:
 
 /usr/include/c++/13/ostream:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h:
-
-/usr/include/c++/13/bits/basic_ios.tcc:
-
-/usr/include/c++/13/pstl/execution_defs.h:

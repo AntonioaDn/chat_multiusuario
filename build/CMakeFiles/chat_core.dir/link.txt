@@ -1,2 +1,2 @@
-/usr/bin/ar qc libchat_core.a CMakeFiles/chat_core.dir/src/ChatServer.cpp.o CMakeFiles/chat_core.dir/src/ClientManager.cpp.o CMakeFiles/chat_core.dir/src/ClientSession.cpp.o CMakeFiles/chat_core.dir/src/ChatClient.cpp.o
+/usr/bin/ar qc libchat_core.a CMakeFiles/chat_core.dir/src/ChatServer.cpp.o CMakeFiles/chat_core.dir/src/ClientManager.cpp.o CMakeFiles/chat_core.dir/src/ClientSession.cpp.o CMakeFiles/chat_core.dir/src/ChatClient.cpp.o CMakeFiles/chat_core.dir/src/MessageHistory.cpp.o
 /usr/bin/ranlib libchat_core.a
